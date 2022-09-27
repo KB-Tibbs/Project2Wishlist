@@ -1,83 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/items"
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="wrap_content"
+        android:hint="@string/name" />
 
     <EditText
-        android:id="@+id/name"
-        android:layout_width="166dp"
-        android:layout_height="59dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="132dp"
-        android:autofillHints=""
-        android:hint="@string/_item_link_here"
-        android:inputType="text"
-        android:maxLength="4"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price" />
 
     <EditText
-        android:id="@+id/price"
-        android:layout_width="137dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="64dp"
-        android:autofillHints=""
-        android:hint="@string/_item_price_here"
-        android:inputType="text"
-        android:maxLength="4"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/store" />
 
     <Button
-        android:id="@+id/submit"
-        android:layout_width="105dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="683dp"
-        android:layout_marginEnd="20dp"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/link"
-        android:layout_width="165dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="4dp"
-        android:autofillHints=""
-        android:hint="@string/_item_link_here"
-        android:inputType="text"
-        android:maxLength="4"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right
+"
+        android:text="@string/sub" />
+</LinearLayout>
